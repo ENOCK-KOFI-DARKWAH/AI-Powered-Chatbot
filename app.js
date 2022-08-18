@@ -28,12 +28,10 @@ class Chatbox {
 
     toggleState(chatbox) {
         this.state = !this.state;
-
         // show or hides the box
         if(this.state) {
             chatbox.classList.add('chatbox--active')
-            // I am trying something here
-            document.getElementById("instruction").hidden();
+                        
         } else {
             chatbox.classList.remove('chatbox--active')
         }
