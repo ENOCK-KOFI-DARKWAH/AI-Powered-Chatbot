@@ -31,6 +31,11 @@ nav{
 
 }
 
+#instruction{
+    color: blue;
+    
+}
+
 nav h2{
     padding-top: 10px;
 }

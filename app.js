@@ -21,6 +21,7 @@ class Chatbox {
         node.addEventListener("keyup", ({key}) => {
             if (key === "Enter") {
                 this.onSendButton(chatBox)
+                
             }
         })
     }
