@@ -31,11 +31,6 @@ nav{
 
 }
 
-#instruction{
-    color: blue;
-    
-}
-
 nav h2{
     padding-top: 10px;
 }
@@ -55,7 +50,13 @@ nav h2{
     margin-bottom: 30%;
     box-shadow: 4px 4px 4px 3px gray;
     border-radius: 5%;
-}
+    text-align: center;
+    }
+
+    .chatbox h3{
+        color: blue;
+        margin-top: 5%;
+    }
 
 
 /* CONTENT IS CLOSE */
