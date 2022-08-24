@@ -1,22 +1,21 @@
-# Chatbot Deployment with Flask and JavaScript
+# AI-Powered 
+![AI-Powered Chatbot](images/chatbot.png "AI-Powered Chatbot")
 
-In this tutorial we deploy the chatbot I created in [this](https://github.com/python-engineer/pytorch-chatbot) tutorial with Flask and JavaScript.
 
-This gives 2 deployment options:
-- Deploy within Flask app with jinja2 template
-- Serve only the Flask prediction API. The used html and javascript files can be included in any Frontend application (with only a slight modification) and can run completely separate from the Flask App then.
+This repo contains the code to a chatbot we created as part of the project requirements for the course CSCD422:Human Computer Interaction. Check out the project website  [here](https://github.com/python-engineer/pytorch-chatbot) 
 
+## Deployment
+We developed a stand-alone front-end and then created and then created an API that 
+serves the model prediction
 ## Initial Setup:
-This repo currently contains the starter files.
-
-Clone repo and create a virtual environment
+Clone the repo and create a virtual environment
 ```
-$ git clone https://github.com/python-engineer/chatbot-deployment.git
-$ cd chatbot-deployment
+$ git clone https://github.com/ENOCK-KOFI-DARKWAH/AI-Powered-Chatbot.git
+$ cd ai-powered-chatbot
 $ python3 -m venv venv
 $ . venv/bin/activate
 ```
-Install dependencies
+## Install dependencies
 ```
 $ (venv) pip install Flask torch torchvision nltk
 ```
@@ -37,16 +36,5 @@ the following command to test it in the console.
 ```
 $ (venv) python chat.py
 ```
-
-Now for deployment follow my tutorial to implement `app.py` and `app.js`.
-
-## Watch the Tutorial
-[![Alt text](https://img.youtube.com/vi/a37BL0stIuM/hqdefault.jpg)](https://youtu.be/a37BL0stIuM)  
-[https://youtu.be/a37BL0stIuM](https://youtu.be/a37BL0stIuM)
-
 ## Note
-In the video we implement the first approach using jinja2 templates within our Flask app. Only slight modifications are needed to run the frontend separately. I put the final frontend code for a standalone frontend application in the [standalone-frontend](/standalone-frontend) folder.
 
-## Credits:
-This repo was used for the frontend code:
-https://github.com/hitchcliff/front-end-chatjs
