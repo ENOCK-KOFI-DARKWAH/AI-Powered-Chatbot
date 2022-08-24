@@ -21,17 +21,16 @@ class Chatbox {
         node.addEventListener("keyup", ({key}) => {
             if (key === "Enter") {
                 this.onSendButton(chatBox)
-
             }
         })
     }
 
     toggleState(chatbox) {
         this.state = !this.state;
+
         // show or hides the box
         if(this.state) {
             chatbox.classList.add('chatbox--active')
-                        
         } else {
             chatbox.classList.remove('chatbox--active')
         }
@@ -57,7 +56,7 @@ class Chatbox {
           })
           .then(r => r.json())
           .then(r => {
-            let msg2 = { name: "Jony", message: r.answer };
+            let msg2 = { name: "Sam", message: r.answer };
             this.messages.push(msg2);
             this.updateChatText(chatbox)
             textField.value = ''
@@ -72,7 +71,7 @@ class Chatbox {
     updateChatText(chatbox) {
         var html = '';
         this.messages.slice().reverse().forEach(function(item, index) {
-            if (item.name === "Jony")
+            if (item.name === "Sam")
             {
                 html += '<div class="messages__item messages__item--visitor">' + item.message + '</div>'
             }
